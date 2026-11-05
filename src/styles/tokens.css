@@ -1,0 +1,102 @@
+/* Doodle Dev design tokens. Change colours, spacing and fonts here. */
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-24: 96px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --stroke-thin: 2px;
+  --stroke-bold: 3px;
+  --font-display: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+  --font-sans: Figtree, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+  --content-max: 1160px;
+  --gutter: 40px;
+}
+
+:root, :root[data-theme="light"] {
+  color-scheme: light;
+  --paper: #fff8ec;
+  --paper-raised: #ffffff;
+  --ink: #1d1a2b;
+  --ink-muted: #5b5670;
+  --outline: var(--ink);
+  --screen: #1d1a2b;
+  --screen-text: #fff8ec;
+  --screen-muted: #c4bed6;
+  --tomato: #ff5a3c;
+  --sun: #ffc93c;
+  --mint: #3ddc97;
+  --sky: #4cc9f0;
+  --on-fill: #1d1a2b;
+  --link: #c2361b;
+  --focus: #2f5bff;
+  --shadow-press: 2px 2px 0 #1d1a2b;
+  --shadow-pop: 4px 4px 0 #1d1a2b;
+  --shadow-pop-lg: 6px 6px 0 #1d1a2b;
+  --shadow-pop-xl: 10px 10px 0 #1d1a2b;
+  --shadow-key: 0 6px 0 #1d1a2b;
+  --shadow-key-down: 0 2px 0 #1d1a2b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #1b1726;
+    --paper-raised: #262035;
+    --ink: #fff8ec;
+    --ink-muted: #c4bed6;
+    --outline: var(--ink);
+    --screen: #1d1a2b;
+    --screen-text: #fff8ec;
+    --screen-muted: #c4bed6;
+    --tomato: #ff7a5e;
+    --sun: #ffd45e;
+    --mint: #4fe3a4;
+    --sky: #5fd0f3;
+    --on-fill: #1d1a2b;
+    --link: #ff9d85;
+    --focus: #8fb3ff;
+    --shadow-press: 2px 2px 0 #fff8ec;
+    --shadow-pop: 4px 4px 0 #fff8ec;
+    --shadow-pop-lg: 6px 6px 0 #fff8ec;
+    --shadow-pop-xl: 10px 10px 0 #fff8ec;
+    --shadow-key: 0 6px 0 #fff8ec;
+    --shadow-key-down: 0 2px 0 #fff8ec;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #1b1726;
+  --paper-raised: #262035;
+  --ink: #fff8ec;
+  --ink-muted: #c4bed6;
+  --outline: var(--ink);
+  --screen: #1d1a2b;
+  --screen-text: #fff8ec;
+  --screen-muted: #c4bed6;
+  --tomato: #ff7a5e;
+  --sun: #ffd45e;
+  --mint: #4fe3a4;
+  --sky: #5fd0f3;
+  --on-fill: #1d1a2b;
+  --link: #ff9d85;
+  --focus: #8fb3ff;
+  --shadow-press: 2px 2px 0 #fff8ec;
+  --shadow-pop: 4px 4px 0 #fff8ec;
+  --shadow-pop-lg: 6px 6px 0 #fff8ec;
+  --shadow-pop-xl: 10px 10px 0 #fff8ec;
+  --shadow-key: 0 6px 0 #fff8ec;
+  --shadow-key-down: 0 2px 0 #fff8ec;
+}
+
+@media (max-width: 720px) { :root { --gutter: 16px; } }
